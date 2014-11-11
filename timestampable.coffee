@@ -10,8 +10,7 @@ defaults =
 
 behaviour = (options = {}) ->
 
-  {clientOnly, createdAt, createdBy, updatedAt, updatedBy} =
-    _.defaults options, defaults
+  {createdAt, createdBy, updatedAt, updatedBy} = _.defaults options, defaults
 
   if ss?
     SimpleSchema = ss.SimpleSchema

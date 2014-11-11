@@ -2,7 +2,7 @@ Package.describe({
   git: 'https://github.com/zimme/meteor-collection-timestampable',
   name: 'zimme:collection-timestampable',
   summary: 'Add timestamps to collections',
-  version: '1.0.0'
+  version: '1.0.1'
 });
 
 Package.onUse(function(api) {

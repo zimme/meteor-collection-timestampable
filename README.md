@@ -25,7 +25,7 @@ Available options are:
 
 `createdAt, createdBy, updatedAt, updatedBy`
 
-Valid values:
+Valid values are:
 
 `'string'` will be used as field name.  
 `false` field will be omitted.

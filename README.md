@@ -2,6 +2,9 @@
 
 Add timestamps to collections
 
+This package uses aldeed:simple-schema, aldeed:collection2 and aldeed:autoform
+if they are available in the project.
+
 ## Usage
 
 ```js

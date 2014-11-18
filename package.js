@@ -24,5 +24,7 @@ Package.onUse(function(api) {
     'aldeed:simple-schema@1.0.3'
   ], ['client', 'server'], {weak: true});
 
+  api.imply('zimme:collection-behaviours');
+
   api.addFiles('timestampable.coffee');
 });

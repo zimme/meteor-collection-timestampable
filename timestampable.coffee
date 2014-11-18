@@ -10,7 +10,8 @@ defaults =
 
 behaviour = (options = {}) ->
 
-  {createdAt, createdBy, updatedAt, updatedBy} = _.defaults options, defaults
+  {createdAt, createdBy, updatedAt, updatedBy} =
+    _.defaults options, @options, defaults
 
   if ss?
     SimpleSchema = ss.SimpleSchema
@@ -63,18 +64,20 @@ behaviour = (options = {}) ->
 
       addC2Defs def if c2?
 
-    @attachSchema new SimpleSchema definition
+    @collection.attachSchema new SimpleSchema definition
 
-  isLocalCollection = @_connection is null
+  isLocalCollection = @collection._connection is null
 
   if Meteor.isServer or isLocalCollection
-    @before.insert (userId = '0', doc) ->
+    @collection.before.insert (userId = '0', doc) ->
       if createdAt
         doc[createdAt] = new Date
       if createdBy and not doc[createdBy]?
         doc[createdBy] = userId
 
-    @before.update (userId = '0', doc, fieldNames, modifier, options) ->
+    @collection.before.update (userId = '0', doc, fieldNames, modifier,
+      options) ->
+
       $set = modifier.$set ?= {}
 
       if updatedAt

@@ -1,4 +1,5 @@
 # Collection-timestampable
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/zimme/meteor-collection-timestampable?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Add timestamps to collections
 

@@ -1,5 +1,5 @@
 # Timestamps for collections
-[![Gitter](https://img.shields.io/badge/Gitter-Join_Chat-brightgreen.svg)]
+[![Gitter](https://img.shields.io/badge/gitter-join_chat-brightgreen.svg)]
 (https://gitter.im/zimme/meteor-collection-timestampable)
 [![Code Climate](http://img.shields.io/codeclimate/github/zimme/meteor-collection-timestampable.svg)]
 (https://codeclimate.com/github/zimme/meteor-collection-timestampable)

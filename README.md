@@ -1,13 +1,20 @@
-# Collection-timestampable
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/zimme/meteor-collection-timestampable?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Code Climate](http://img.shields.io/codeclimate/github/zimme/meteor-collection-timestampable.svg?style=flat)](https://codeclimate.com/github/zimme/meteor-collection-timestampable)
+# Timestamps for collections
+[![Gitter](https://img.shields.io/badge/Gitter-Join_Chat-brightgreen.svg)]
+(https://gitter.im/zimme/meteor-collection-timestampable)
+[![Code Climate](http://img.shields.io/codeclimate/github/zimme/meteor-collection-timestampable.svg)]
+(https://codeclimate.com/github/zimme/meteor-collection-timestampable)
 
 Add timestamps to collections
 
-This package uses aldeed:simple-schema, aldeed:collection2 and aldeed:autoform
+This package uses `aldeed:simple-schema`, `aldeed:collection2` and `aldeed:autoform`
 if they are available in the project.
 
-## Usage
+### Install
+```sh
+meteor add zimme:collection-timestampable
+```
+
+### Usage
 
 ```js
 Posts = new Mongo.Collection('posts');
@@ -24,11 +31,11 @@ Posts.attachBehaviour('timestampable', {
 });
 ```
 
-## Options
+### Options
 
 Available options are:
 
-`createdAt, createdBy, updatedAt, updatedBy`
+`createdAt`, `createdBy`, `updatedAt`, `updatedBy`
 
 Valid values are:
 

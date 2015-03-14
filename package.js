@@ -19,7 +19,7 @@ Package.onUse(function(api) {
   ]);
 
   api.use([
-    'aldeed:autoform@4.0.0',
+    'aldeed:autoform@4.0.0 || 5.0.0',
     'aldeed:collection2@2.0.0',
     'aldeed:simple-schema@1.0.3'
   ], ['client', 'server'], {weak: true});

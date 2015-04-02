@@ -7,10 +7,11 @@ defaults =
   createdBy: 'createdBy'
   updatedAt: 'updatedAt'
   updatedBy: 'updatedBy'
+  systemId: '0'
 
 behaviour = (options = {}) ->
 
-  {createdAt, createdBy, updatedAt, updatedBy} =
+  {createdAt, createdBy, updatedAt, updatedBy, systemId} =
     _.defaults options, @options, defaults
 
   if ss?
@@ -37,7 +38,7 @@ behaviour = (options = {}) ->
 
       addAfDefs def if af?
 
-    regEx = new RegExp "(#{SimpleSchema.RegEx.Id.source})|^0$"
+    regEx = new RegExp "(#{SimpleSchema.RegEx.Id.source})|^#{systemId}$"
 
     if createdBy
       def = definition[createdBy] =
@@ -71,13 +72,13 @@ behaviour = (options = {}) ->
   isLocalCollection = @collection._connection is null
 
   if Meteor.isServer or isLocalCollection
-    @collection.before.insert (userId = '0', doc) ->
+    @collection.before.insert (userId = systemId, doc) ->
       if createdAt
         doc[createdAt] = new Date
       if createdBy and not doc[createdBy]?
         doc[createdBy] = userId
 
-    @collection.before.update (userId = '0', doc, fieldNames, modifier,
+    @collection.before.update (userId = systemId, doc, fieldNames, modifier,
       options) ->
 
       $set = modifier.$set ?= {}

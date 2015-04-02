@@ -37,10 +37,12 @@ behaviour = (options = {}) ->
 
       addAfDefs def if af?
 
+    regEx = new RegExp "(#{SimpleSchema.RegEx.Id.source})|^0$"
+
     if createdBy
       def = definition[createdBy] =
         optional: true
-        regEx: new RegExp "(#{SimpleSchema.RegEx.Id.source})|^0$"
+        regEx: regEx
         type: String
 
       addAfDefs def if af?
@@ -57,7 +59,7 @@ behaviour = (options = {}) ->
     if updatedBy
       def = definition[updatedBy] =
         optional: true
-        regEx: new RegExp "(#{SimpleSchema.RegEx.Id.source})|^0$"
+        regEx: regEx
         type: String
 
       addAfDefs def if af?

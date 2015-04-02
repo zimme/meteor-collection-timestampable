@@ -1,3 +1,7 @@
+## [1.0.6] - 2015-04-02
+  * Fix links in CHANGELOG.md
+  * Configurable systemId
+
 ## [1.0.5] - 2015-03-16
   * Update Gitter badge
   * Add support for `aldeed:autoform@5.0.0`
@@ -29,6 +33,7 @@
   * Configurable field names
   * Optional fields
 
+[1.0.6]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.5...1.0.6
 [1.0.5]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.4...1.0.5
 [1.0.4]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.2...1.0.3

@@ -29,8 +29,8 @@
   * Configurable field names
   * Optional fields
 
-[1.0.5]: https://github.com/zimme/atom-composer/compare/1.0.4...1.0.5
-[1.0.4]: https://github.com/zimme/atom-composer/compare/1.0.3...1.0.4
-[1.0.3]: https://github.com/zimme/atom-composer/compare/1.0.2...1.0.3
-[1.0.2]: https://github.com/zimme/atom-composer/compare/1.0.1...1.0.2
-[1.0.1]: https://github.com/zimme/atom-composer/compare/1.0.0...1.0.1
+[1.0.5]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.4...1.0.5
+[1.0.4]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.3...1.0.4
+[1.0.3]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.2...1.0.3
+[1.0.2]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.1...1.0.2
+[1.0.1]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.0...1.0.1

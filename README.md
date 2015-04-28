@@ -3,7 +3,7 @@
 [![Code Climate](http://img.shields.io/codeclimate/github/zimme/meteor-collection-timestampable.svg)]
 (https://codeclimate.com/github/zimme/meteor-collection-timestampable)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]
-(https://github.com/zimme/meteor-collection-timestampable/LICENSE.md)
+(https://github.com/zimme/meteor-collection-timestampable/blob/master/LICENSE.md)
 
 # Timestamps for collections
 

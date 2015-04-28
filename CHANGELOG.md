@@ -1,5 +1,6 @@
 ## Next
   * Update documentation
+  * Add MIT license
 
 ## [1.0.6] - 2015-04-02
   * Fix links in CHANGELOG.md

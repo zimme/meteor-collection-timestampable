@@ -1,4 +1,5 @@
 ## Next
+  * Fix `.attachSchema` error when only having `aldeed:simple-schema` in project
   * Fix `updatedBy` never updating - [#9]
   * Update documentation
   * Add MIT license

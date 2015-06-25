@@ -1,6 +1,6 @@
 af = Package['aldeed:autoform']
 c2 = Package['aldeed:collection2']
-ss = Package['aldeed:simple-schema']
+SimpleSchema = Package['aldeed:simple-schema']?.SimpleSchema
 
 defaults =
   createdAt: 'createdAt'
@@ -14,9 +14,7 @@ behaviour = (options = {}) ->
   {createdAt, createdBy, updatedAt, updatedBy, systemId} =
     _.defaults options, @options, defaults
 
-  if ss?
-    SimpleSchema = ss.SimpleSchema
-
+  if c2?
     afDefinition = autoform:
       omit: true
 
@@ -55,7 +53,7 @@ behaviour = (options = {}) ->
 
       addAfDefs def if af?
 
-      addC2Defs def if c2?
+      addC2Defs def
 
     if updatedBy
       def = definition[updatedBy] =
@@ -65,7 +63,7 @@ behaviour = (options = {}) ->
 
       addAfDefs def if af?
 
-      addC2Defs def if c2?
+      addC2Defs def
 
     @collection.attachSchema new SimpleSchema definition
 

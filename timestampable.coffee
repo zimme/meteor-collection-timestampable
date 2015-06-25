@@ -85,7 +85,7 @@ behaviour = (options = {}) ->
 
       if updatedAt
         $set[updatedAt] = new Date
-      if updatedBy and not doc[updatedBy]?
+      if updatedBy and not $set[updatedBy]?
         $set[updatedBy] = userId
 
 CollectionBehaviours.define 'timestampable', behaviour

@@ -21,12 +21,6 @@ behaviour = (options = {}) ->
     addAfDefs = (definition) ->
       _.extend definition, afDefinition
 
-    c2Definition =
-      denyInsert: true
-
-    addC2Defs = (definition) ->
-      _.extend definition, c2Definition
-
     definition = {}
 
     if createdAt
@@ -48,22 +42,20 @@ behaviour = (options = {}) ->
 
     if updatedAt
       def = definition[updatedAt] =
+        denyInsert: true
         optional: true
         type: Date
 
       addAfDefs def if af?
 
-      addC2Defs def
-
     if updatedBy
       def = definition[updatedBy] =
+        denyInsert: true
         optional: true
         regEx: regEx
         type: String
 
       addAfDefs def if af?
-
-      addC2Defs def
 
     @collection.attachSchema new SimpleSchema definition
 

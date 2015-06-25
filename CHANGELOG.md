@@ -1,4 +1,5 @@
 ## Next
+  * Fix `updatedBy` never updating - [#9]
   * Update documentation
   * Add MIT license
 
@@ -43,3 +44,5 @@
 [1.0.3]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.0...1.0.1
+
+[#9]: https://github.com/zimme/meteor-collection-timestampable/issues/9

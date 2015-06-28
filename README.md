@@ -1,9 +1,6 @@
-[![Gitter](https://img.shields.io/badge/gitter-join_chat-brightgreen.svg)]
-(https://gitter.im/zimme/meteor-collection-timestampable)
-[![Code Climate](http://img.shields.io/codeclimate/github/zimme/meteor-collection-timestampable.svg)]
-(https://codeclimate.com/github/zimme/meteor-collection-timestampable)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)]
-(https://github.com/zimme/meteor-collection-timestampable/blob/master/LICENSE.md)
+[![Gitter][Gitter Badge]][Gitter]
+[![Code Climate][Code Climate Badge]][Code Climate]
+[![License][License Badge]][License]
 
 # Timestamps for collections
 
@@ -116,3 +113,9 @@ CollectionBehaviours.configure('timestampable',{
 
 * This package attaches a schema to the collection if `aldeed:simple-schema`,
   `aldeed:collection2` and/or `aldeed:autoform` are used in the application.
+[Code Climate]: https://codeclimate.com/github/zimme/meteor-collection-timestampable
+[Code Climate Badge]: http://img.shields.io/codeclimate/github/zimme/meteor-collection-timestampable.svg
+[Gitter]: https://gitter.im/zimme/meteor-collection-timestampable
+[Gitter Badge]: https://img.shields.io/badge/gitter-join_chat-brightgreen.svg
+[License]: https://github.com/zimme/meteor-collection-timestampable/blob/master/LICENSE.md
+[License Badge]: https://img.shields.io/badge/license-MIT-blue.svg

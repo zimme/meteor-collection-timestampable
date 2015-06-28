@@ -31,6 +31,12 @@ Posts.attachBehaviour('timestampable', {
   updatedBy: false
 });
 ```
+Using `CollectionBehaviours.attach` you can also attach a behaviour to multiple
+collections. You can also add multiple behaviours to a collection or add
+multiple behaviours to multiple collections.
+
+Please see [`zimme:collection-behaviours`][CollectionBehaviours] for more
+info on attaching behaviours to collections.
 
 #### Insert
 
@@ -117,6 +123,7 @@ used by the application. If `aldeed:autoform` is available too, it adds
 
 [Code Climate]: https://codeclimate.com/github/zimme/meteor-collection-timestampable
 [Code Climate Badge]: http://img.shields.io/codeclimate/github/zimme/meteor-collection-timestampable.svg
+[CollectionBehaviours]: https://atmospherejs.com/zimme/collection-behaviours
 [Gitter]: https://gitter.im/zimme/meteor-collection-timestampable
 [Gitter Badge]: https://img.shields.io/badge/gitter-join_chat-brightgreen.svg
 [License]: https://github.com/zimme/meteor-collection-timestampable/blob/master/LICENSE.md

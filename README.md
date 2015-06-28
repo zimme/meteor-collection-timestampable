@@ -111,8 +111,10 @@ CollectionBehaviours.configure('timestampable',{
 
 ### Notes
 
-* This package attaches a schema to the collection if `aldeed:simple-schema`,
-  `aldeed:collection2` and/or `aldeed:autoform` are used in the application.
+* This package attaches a schema to the collection(s) if `aldeed:collection2` is
+used by the application. If `aldeed:autoform` is available too, it adds
+`aldeed:autoform` specific schema definitions
+
 [Code Climate]: https://codeclimate.com/github/zimme/meteor-collection-timestampable
 [Code Climate Badge]: http://img.shields.io/codeclimate/github/zimme/meteor-collection-timestampable.svg
 [Gitter]: https://gitter.im/zimme/meteor-collection-timestampable

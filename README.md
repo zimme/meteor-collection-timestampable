@@ -20,10 +20,10 @@ Basic usage examples.
 ```js
 Posts = new Mongo.Collection('posts');
 
-//Attach behaviour with the default options
+// Attach behaviour with the default options
 Posts.attachBehaviour('timestampable');
 
-//Attach behaviour with custom options
+// Attach behaviour with custom options
 Posts.attachBehaviour('timestampable', {
   createdAt: 'insertedAt',
   createdBy: 'insertedBy',

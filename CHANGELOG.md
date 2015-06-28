@@ -1,4 +1,4 @@
-## [1.0.7-rc.1] - 2015-06-25
+## [1.0.7] - 2015-06-28
   * Fix `.attachSchema` error when only having `aldeed:simple-schema` in project
   * Fix `updatedBy` never updating - [#9]
   * Update documentation
@@ -39,7 +39,7 @@
   * Configurable field names
   * Optional fields
 
-[1.0.7-rc.1]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.6...1.0.7-rc.1
+[1.0.7]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.6...1.0.7
 [1.0.6]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.5...1.0.6
 [1.0.5]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.4...1.0.5
 [1.0.4]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.3...1.0.4

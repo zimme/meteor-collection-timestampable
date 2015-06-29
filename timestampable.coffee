@@ -10,6 +10,7 @@ defaults =
   systemId: '0'
 
 behaviour = (options = {}) ->
+  check options, Object
 
   {createdAt, createdBy, updatedAt, updatedBy, systemId} =
     _.defaults options, @options, defaults

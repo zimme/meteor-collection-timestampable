@@ -102,6 +102,9 @@ The following options can be used:
 
 ### Global configuration
 
+The global configuration for this package should be in shared code, preferably
+in a `lib` folder.
+
 ```js
 // Configure behaviour globally
 // All collection using this behaviour will use these settings as defaults

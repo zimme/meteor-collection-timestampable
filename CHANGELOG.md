@@ -1,4 +1,5 @@
-## [Next]
+## [1.0.9]
+  * Add missing dependency of the check package - [#15]
   * Document that global configuration belongs in `shared` code, preferably
   in a `lib` folder
 
@@ -46,7 +47,7 @@
   * Configurable field names
   * Optional fields
 
-[Next]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.8...HEAD
+[1.0.9]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.8...1.0.9
 [1.0.8]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.7...1.0.8
 [1.0.7]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.6...1.0.7
 [1.0.6]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.5...1.0.6
@@ -57,3 +58,4 @@
 [1.0.1]: https://github.com/zimme/meteor-collection-timestampable/compare/1.0.0...1.0.1
 
 [#9]: https://github.com/zimme/meteor-collection-timestampable/issues/9
+[#15]: https://github.com/zimme/meteor-collection-timestampable/issues/15

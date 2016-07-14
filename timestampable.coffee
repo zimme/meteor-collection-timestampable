@@ -59,24 +59,21 @@ behaviour = (options = {}) ->
       addAfDefs def if af?
 
     @collection.attachSchema new SimpleSchema definition
+  
+  @collection.before.insert (userId = systemId, doc) ->
+    if createdAt
+      doc[createdAt] = new Date
+    if createdBy and not doc[createdBy]?
+      doc[createdBy] = userId
 
-  isLocalCollection = @collection._connection is null
+  @collection.before.update (userId = systemId, doc, fieldNames, modifier,
+    options) ->
 
-  if Meteor.isServer or isLocalCollection
-    @collection.before.insert (userId = systemId, doc) ->
-      if createdAt
-        doc[createdAt] = new Date
-      if createdBy and not doc[createdBy]?
-        doc[createdBy] = userId
+    $set = modifier.$set ?= {}
 
-    @collection.before.update (userId = systemId, doc, fieldNames, modifier,
-      options) ->
-
-      $set = modifier.$set ?= {}
-
-      if updatedAt
-        $set[updatedAt] = new Date
-      if updatedBy and not $set[updatedBy]?
-        $set[updatedBy] = userId
+    if updatedAt
+      $set[updatedAt] = new Date
+    if updatedBy and not $set[updatedBy]?
+      $set[updatedBy] = userId
 
 CollectionBehaviours.define 'timestampable', behaviour
